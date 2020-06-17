@@ -8,14 +8,6 @@ then
 else 
     sudo apt-get install -y git
 fi
-# check curl
-ret=`curl --version`
-if [[ $? -eq 0 &&  $ret =~ "curl" ]] 
-then 
-    echo "curl installed. "
-else 
-    sudo apt-get install -y curl
-fi
 # check zsh
 ret=`zsh --version`
 if [[ $? -eq 0 &&  $ret =~ "zsh" ]] 
